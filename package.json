@@ -14,7 +14,10 @@
     "type": "git",
     "url": "https://github.com/jsdevel/node-xinput.git"
   },
-  "keywords": [],
+  "keywords": [
+    "xinput",
+    "wrapper"
+  ],
   "contributors": [],
   "license": "MIT",
   "bugs": {
