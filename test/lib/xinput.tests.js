@@ -7,7 +7,7 @@ function getTouchpad(cb){
     var touchpad = devices.filter(function(device){
       return device.name.toLowerCase().indexOf('touchpad') !== -1;
     })[0];
-    cb(err, touchpad);
+    cb(err, process.env.TRAVIS ? devices[devices.length - 1] : touchpad);
   });
 }
 
