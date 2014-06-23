@@ -1,0 +1,33 @@
+{
+  "name": "xinput",
+  "main": "lib/xinput/",
+  "version": "0.5.0",
+  "description": "A wrapper around xinput.",
+  "author": "Joseph Spencer",
+  "scripts": {
+    "jshint": "jshint lib && jshint --config ./test/.jshintrc test",
+    "cover": "istanbul cover _mocha -- -R spec && cat ./coverage/lcov.info | coveralls -v && rm -rf coverage",
+    "pretest": "jshint lib && jshint --config ./test/.jshintrc test",
+    "test": "npm run cover"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdevel/node-xinput.git"
+  },
+  "keywords": [],
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdevel/node-xinput/issues"
+  },
+  "devDependencies": {
+    "coveralls": "~2.10.0",
+    "should": "~4.0.4",
+    "mocha": "~1.20.1",
+    "jshint": "~2.5.1",
+    "istanbul": "~0.2.11"
+  },
+  "dependencies": {
+    "debug": "~1.0.2"
+  }
+}
